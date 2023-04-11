@@ -1,0 +1,57 @@
+-Products
+ID			INT(11)
+SKU			VARCHAR(50)
+Name			VARCHAR(100)
+Price			FLOAT(100)
+MSRP			VARCHAR(10)
+UnitWeight		FLOAT
+CartDesc		TEXT
+ShortDesc		TEXT
+LongDesc		TEXT
+Thumb		VARCHAR(100)
+Image			VARCHAR(100)
+CategoryID		INT(11)
+UnitsInStock		INT(11)
+UpdateDate		TIMESTAMP
+SupplierID		INT(11)
+SupplierProductID	INT(11)
+QuantityPerUnit	INT(11)
+AvailableSize		VARCHAR(50)
+AvailableColors	VARCHAR(100)
+Discount		DECIMAL
+UnitsOnOrder	SMALLINT
+ReorderLevel	SMALLINT
+ProductAvailable	ENUM('y','n')
+DiscountAvailable	ENUM('y','n')
+CurrentOrder		ENUM('y','n')
+Note			TEXT
+
+-Orders
+ID			INT(11)
+UserID		INT(11)
+Amount		INT(11)
+Date			DATETIME
+ShipName		VARCHAR(100)
+ShipAddress		VARCHAR(100)
+ShipAddress2	VARCHAR(100)
+ShipCity		VARCHAR(50)
+ShipState		VARCHAR(50)
+ShipZip		VARCHAR(20)
+ShipCountry		VARCHAR(50)
+ShipPhone		VARCHAR(20)
+ShipFax		VARCHAR(20)
+ShipDate		DATETIME
+ShipEmail		VARCHAR(50)
+Tax			VARCHAR(20)
+Shipped		ENUM('y','n')
+TrackingNumber	VARCHAR(80)
+ShipperID		INT(11)
+Fulfilled		ENUM('y','n')
+Paid			ENUM('y','n')
+PaymentDate	DATETIME
+
+-Shipper
+ID			INT(11)
+Name			VARCHAR(100) (FedEx, UPS)
+Cost			VARCHAR(20)
+			

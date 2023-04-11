@@ -1,0 +1,23 @@
+Thank you. Your order has been received.
+Order Number:	1564
+Date:	August 4, 2018
+Total:	$4.99
+Payment Method:	Credit Card (Stripe)
+Order Details
+Product	Quantity	Total
+ 	Subtotal:	$4.99
+ 	Payment method:	Credit Card (Stripe)
+ 	Total:	$4.99
+
+10 UPC/EAN Barcodes
+1	$4.99
+Customer details
+Email: internetgrind@gmail.com
+Telephone: 6787446433
+Billing Address
+William Cayetano
+DEL
+11911 Olive Glen Lane
+128
+Los Angeles, CA 90047
+United States (US)

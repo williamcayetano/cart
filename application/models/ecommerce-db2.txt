@@ -1,0 +1,99 @@
+-Suppliers
+SupplierID	INT(11)
+CompanyName	VARCHAR(50)
+ContactFName	VARCHAR(30)
+ContactLName	VARCHAR(50)
+ContactTitle	VARCHAR(30)
+Address1	VARCHAR(60)
+Address2	VARCHAR(50)
+City	VARCHAR(15)
+State	VARCHAR(25)
+PostalCode	VARCHAR(15)
+Country	VARCHAR(50)
+Phone	VARCHAR(25)
+Fax	VARCHAR(25)
+Email	VARCHAR(75)
+WebSite	VARCHAR(100)
+PaymentMethods	VARCHAR(100)
+?DiscountType	VARCHAR(100)
+DiscountRate	VARCHAR(100)
+XTypeGoods	VARCHAR(255)
+DiscountAvailable	ENUM('y','n')
+CurrentOrder	ENUM('y','n')
+?CustomerID	VARCHAR(50)
+?SizeURL	VARCHAR(100)
+?Logo	VARCHAR(75)
+?Ranking	INT(11)
+Note	VARCHAR(255)
+
+
+-Product
+XProductID	INT(11)
+XSKU	VARCHAR(50)
+XSupplierProductID	VARCHAR(50)
+XProductName	VARCHAR(60)
+XProductDescription	VARCHAR(255)
+XSupplierID	INT(11)
+XCategoryID	INT(11)
+XQuantityPerUnit	INT(11)
+?UnitSize	INT(11)
+XUnitPrice	VARCHAR
+XMSRP	VARCHAR
+XAvailableSize	VARCHAR(50)
+XAvailableColors	VARCHAR(100)
+?SizeID	INT(11)
+?ColorID	INT(11)
+XDiscount	DECIMAL
+XUnitWeight	VARCHAR
+XUnitsInStock	SMALLINT
+XUnitsOnOrder	SMALLINT
+XReorderLevel	SMALLINT
+XProductAvailable	ENUM('y','n')
+XDiscountAvailable	ENUM('y','n')
+XCurrentOrder	ENUM('y','n')
+XPicture	VARCHAR(50)
+Ranking	INT(11)
+Note	VARCHAR(255)
+
+
+-Orders
+XOrderID	INT(11)
+XCustomerID	VARCHAR(50)
+?PaymentID	INT(11)
+XOrderDate	DATETIME
+?RequiredDate	DATETIME
+XShipDate	DATETIME
+XShipperID	INT(11)
+?Freight	
+XSalesTax
+XTimeStamp	VARCHAR(50)
+?TransactStatus	VARCHAR(50)
+?ErrLoc	VARCHAR(50)
+?ErrMsg	VARCHAR(250)
+XFulfilled	ENUM('y','n')
+?Deleted	ENUM('y','n')
+XPaid
+XPaymentDate
+
+-OrderDetails
+XOrderDetailID	INT(11)
+XProductID	INT(11)
+XPrice	VARCHAR
+XQuantity	SMALLINT
+XDiscount	
+XTotal
+XSize	VARCHAR(50)
+XColor	VARCHAR(50)
+XFulfilled	ENUM('y','n')
+XBillDate	DATETIME
+XShipDate	DATETIME
+XShipperID	INT
+?Freight
+XSalesTax
+
+-ProductDetails
+ProductDetailID	INT(11)
+ProductID	INT(11)
+Color	VARCHAR(50)
+Size	VARCHAR(50)
+

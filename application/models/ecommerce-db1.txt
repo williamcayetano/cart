@@ -1,0 +1,84 @@
+-products
+XProductID	INT(12)
+XProductSKU	VARCHAR(50)
+XProductName	VARCHAR(100)
+XProductPrice	FLOAT
+XProductWeight	FLOAT
+XProductCartDesc	VARCHAR(250)
+XProductShortDesc	VARCHAR(1000)
+XProductLongDesc	TEXT
+XProductThumb	VARCHAR(100)
+XProductImage	VARCHAR(100)
+XProductCategoryID	INT(11)
+XProductUpdateDate	TIMESTAMP
+XProductStock	FLOAT
+?Productive TINYINT(1)
+?ProductUnlimited TINYINT(1)
+?ProductLocation	VARCHAR(250)
+
+-productcategories
+XCategoryID	INT(11)
+XCategoryName	VARCHAR(50)
+
+-productoptions
+XProductOptionID	INT(10)
+XOptionID	INT(11)
+XProductID	INT(11)
+?OptionGroupID	INT(11)
+?OptionPriceIncrement	Double
+
+-orderdetails
+XDetailID	INT(11)
+XDetailOrderID	INT(11)
+XDetailProductID INT(11)
+?DetailName VARCHAR(250)
+XDetailPrice	FLOAT
+XDetailSKU	VARCHAR(50)
+XDetailQuantity	INT(11)
+
+-orders
+XOrderID INT(11)
+XOrderUserID	INT(11)
+XOrderAmount	FLOAT
+XOrderShipName	VARCHAR(100)
+XOrderShipAddress	VARCHAR(100)
+XOrderShipAddress2	VARCHAR(100)
+XOrderCity	VARCHAR(50)
+XOrderState	VARCHAR(50)
+XOrderZip	VARCHAR(20)
+XOrderCountry	VARCHAR(50)
+XOrderPhone	VARCHAR(20)
+XOrderFax	VARCHAR(20)
+XOrderShipping FLOAT
+XOrderTax FLOAT
+XOrderEmail	VARCHAR(100)
+XOrderDate	TIMESTAMP
+XOrderShipped	TINYINT(1)
+XOrderTrackingNumber	VARCHAR(80)
+
+-options
+XOptionID	INT(11)
+XOptionName	VARCHAR(50)
+
+-optiongroups
+?OptionGroupID		INT(11)
+?OptionGroupName	VARCHAR(50)
+
+-users
+UserID	INT(11)
+UserEmail VARCHAR(500)
+UserPassword	VARCHAR(500)
+UserFirstName	VARCHAR(50)
+UserLastName	VARCHAR(50)
+UserCity	VARCHAR(90)
+UserState	VARCHAR(20)
+UserZip	VARCHAR(12)
+UserEmailVerified TINYINT(1)
+UserRegistrationDate	TIMESTAMP
+UserVerificationCode	VARCHAR(20)
+UserIP	VARCHAR(50)
+UserPhone	VARCHAR(20)
+UserFax	VARCHAR(20)
+UserCountry	VARCHAR(20)
+UserAddress	VARCHAR(100)
+UserAddress2	VARCHAR(50)
